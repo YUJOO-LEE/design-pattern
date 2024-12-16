@@ -1,2 +1,2 @@
-"use strict";
-const src = 'hello';
+import paint from "./paint";
+console.log(paint);

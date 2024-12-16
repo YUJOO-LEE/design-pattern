@@ -1,1 +1,3 @@
-const src: string = 'hello';
+import paint from "./paint";
+
+console.log(paint);
