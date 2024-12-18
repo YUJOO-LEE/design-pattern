@@ -1,4 +1,4 @@
-class Paint {
+class IEPainter {
     static instance;
     constructor(canvas) {
         if (!canvas || !(canvas instanceof HTMLCanvasElement)) {
@@ -11,9 +11,9 @@ class Paint {
     }
     static getInstance() {
         if (!this.instance) {
-            this.instance = new Paint(document.querySelector('#canvas'));
+            this.instance = new IEPainter(document.querySelector('#canvas'));
         }
         return this.instance;
     }
 }
-export default Paint;
+export default IEPainter;
